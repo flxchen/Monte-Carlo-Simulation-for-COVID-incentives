@@ -147,11 +147,10 @@ def printResult():
 
 #write to a data.csv
 def writeCSV(lines):
-    filename = 'D:/document/college/UWB/2021 Spring/STMATH 381 Discrete Math Modeling/hw/Project 3/COVID.csv'
+    filename = 'data.csv'
     # Open the file in write mode and store the content in file_object
     with open(filename, 'w',newline='') as file_object:
-        writer = csv.writer(file_object)
-        #writer.writerow(['x','y'])
+        writer = csv.writer(file_object)        
         writer.writerow(['Total','average','vaccine1 ','vaccine2','vaccine3','Game1','Game2'])
         for i in range(lines):
             l = Repeat(1000)
